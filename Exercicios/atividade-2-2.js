@@ -13,4 +13,4 @@ else if (tipos[pergunta] == 'Converter Fahrenheit em Celsius') {
     var fahrenheit = user.question('Quantos Fahrenheit? ')
     var resultado = (fahrenheit - 32) * 5 / 9
     console.log(resultado)
-};
+}
