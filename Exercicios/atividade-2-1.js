@@ -32,4 +32,4 @@ if (total >= produto) {
 }
 else {
     console.log('Saldo insuficiente')
-}
+};
