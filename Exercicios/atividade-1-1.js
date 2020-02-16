@@ -2,7 +2,7 @@ var user = require('readline-sync')
 
 var idade = user.question('Qual sua idade? : ')
 
-if (idade < 18) {
+if (idade < 16) {
     console.log('Infelizmente você não pode votar!')
 }
 else {

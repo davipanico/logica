@@ -1,8 +1,8 @@
 var user = require('readline-sync')
 
-var numero1 = 5
-var numero2 = 6
-var numero3 = 100
+var numero1 = 50
+var numero2 = 15
+var numero3 = 10
 
 if (numero1 < numero2 && numero2 < numero3 ) {
     console.log(numero1, numero2, numero3)
