@@ -12,10 +12,12 @@ while (resposta < 1 || resposta > 50) {
 while (resposta != numeroCerto) {
     console.log("Errrrrrroooouuuuu, tenta de novo")
     var resposta = user.question('Insira novamente um número ')
+
         while (resposta < 1 || resposta > 50) {
             console.log('Seu número não está entre 1 e 50')
             var resposta = user.question('Insira novamente o número ')
         }
+        
 }
 
 console.log('Parabéns você acertou!')
