@@ -1,0 +1,6 @@
+var fs = require('fs')
+var carroSerializado = fs.readFileSync('./exercicios/data/carro.json')
+var carro = JSON.parse(carroSerializado)
+console.log(carro.cor)
+console.log(carro.marca)
+console.log(carro.modelo)
