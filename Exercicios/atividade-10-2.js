@@ -1,6 +1,8 @@
 var user = require('readline-sync')
 var fs = require('fs')
 
+var listaDeCarros = []
+
 function infoCarro() {
     var carro = new Object() 
     carro.cor = user.question('Qual a cor do carro? '),
@@ -9,8 +11,6 @@ function infoCarro() {
     return carro
 }
 var carroResultado = infoCarro()
-var listaDeCarros = []
-listaDeCarros.push(carroResultado)
-var carroSerializado = JSON.stringify(listaDeCarros)
+var carroSerializado = JSON.stringify(carroResultado)
 var caminhoDoArquivo = './Exercicios/data/carro.json'
 fs.writeFileSync(caminhoDoArquivo, carroSerializado)
