@@ -22,5 +22,34 @@ while(quantidade > 0){
    quantidade--
 }
 
-console.log(maior)
-console.log(alunos)
+function encontraMaior(array) {
+    var maior;
+    if(array.length < 1) {
+       throw new Error('Empty array');
+    }
+
+    for (let i = 0; i < array.length; i++) {
+        let a, b;
+        a = array[i];
+        b = array[i+1];
+
+        if (!b) {
+            b = 0;
+        }
+
+        console.log(`A comparar ${a} com ${b}`);
+
+        if (a.idade > b.idade) {
+            maior = a;
+        } 
+        else if (b.idade > a.idade) {
+            maior = b;
+        }
+        else if(a.idade === b.idade) {
+            maior = a;
+        } 
+        console.log(`O maior é agora ${maior}`);
+    }
+    return maior;
+}
+console.log(encontraMaior(alunos));

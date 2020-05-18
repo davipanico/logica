@@ -32,12 +32,3 @@ if (carro.modelo === carro2.modelo) {
 else {
     console.log('Os carros não são iguais')
 }
-
-
-
-//getCar() {
-    //var nome = user.question('Qual o nome do carro? ')
-    //var modelo = user.question('Qual o modelo do carro? ')
-    //var cor = user.question('Qual a cor do carro? ')
-    //return carro = {nome, modelo, cor}
-//}
