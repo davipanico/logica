@@ -18,7 +18,10 @@ while (resposta != numeroCerto) {
             var resposta = user.question('Insira novamente o número ')
         }
         
-}
+};
+
+
+
 
 console.log('Parabéns você acertou!')
 console.log('Era uma vez um mexilhiãozinho feio, ele era tão feio, mas tão feio que todo mundo morreu')
