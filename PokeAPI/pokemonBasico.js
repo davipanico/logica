@@ -46,7 +46,6 @@ function addToPokedex () {
 }
 
 function writeJson () {
-
     const pokemonToString = JSON.stringify(pokedexlocal)
     var filePath = './data/localPokedex.json'
     fs.writeFileSync(filePath, pokemonToString)
